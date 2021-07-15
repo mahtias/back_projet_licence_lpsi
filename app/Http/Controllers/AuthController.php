@@ -103,7 +103,7 @@ class AuthController extends Controller
             'role_id'=>'required',
             'nom_user'=>'required|string',
             'prenom_user'=>'required|string',
-             'password' => 'required|string|min:6|confirmed',
+             'password' => 'required|string|min:6',
         ]);
 
           if($validator->fails()){
